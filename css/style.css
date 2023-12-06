@@ -23,35 +23,27 @@ body {
   align-items: center;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 20px;
 }
 
 .drum-item {
-  padding: 10px;
 }
 
 .title {
   text-align: center;
   text-transform: uppercase;
   margin-bottom: 40px;
-  color: #9dee33;
+  color: #00b3c2;
 }
 
-img {
+button {
+  background-image: url('../img/crash.png');
+  background-size: cover;
   width: 200px;
   height: 200px;
-  border-radius: 50%;
   transition: 0.2s;
-
-  &:hover {
-    box-shadow: 0 0 0 5px #9dee33;
-    transform: scale(1.05);
-  }
-}
-
-figcaption {
-  margin-top: 20px;
-  color: #fff;
-  text-align: center;
+  font-size: 2rem;
+  font-family: sans-serif;
   font-weight: bold;
+  border: none;
+  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
 }
