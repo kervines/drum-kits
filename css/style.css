@@ -1,3 +1,4 @@
+@import url('https://fonts.googleapis.com/css2?family=Righteous&display=swap');
 * {
   padding: 0;
   margin: 0;
@@ -5,7 +6,7 @@
 }
 
 html {
-  font-family: Arial, Helvetica, sans-serif;
+  font-family: 'Righteous', sans-serif;
 }
 
 body {
@@ -14,36 +15,30 @@ body {
 }
 
 .drum-container {
+  padding-top: 5rem;
   height: 100%;
-  padding: 20px;
 }
 
 .drum {
   display: flex;
-  align-items: center;
-  justify-content: center;
   flex-wrap: wrap;
-}
-
-.drum-item {
+  width: 600px;
+  margin: 0 auto;
 }
 
 .title {
   text-align: center;
-  text-transform: uppercase;
+  font-size: 3rem;
   margin-bottom: 40px;
   color: #00b3c2;
 }
 
-button {
-  background-image: url('../img/crash.png');
-  background-size: cover;
+.title img {
+  width: 50px;
+}
+
+.drum-item img {
   width: 200px;
   height: 200px;
-  transition: 0.2s;
-  font-size: 2rem;
-  font-family: sans-serif;
-  font-weight: bold;
-  border: none;
-  text-shadow: 0px 0px 5px rgba(0, 0, 0, 0.3);
+  background-color: white;
 }
