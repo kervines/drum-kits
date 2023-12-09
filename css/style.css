@@ -11,7 +11,13 @@ html {
 
 body {
   height: 100vh;
-  background-color: #355;
+  background: rgb(2, 0, 36);
+  background: linear-gradient(
+    90deg,
+    rgba(2, 0, 36, 1) 0%,
+    rgba(142, 177, 250, 1) 35%,
+    rgba(0, 212, 255, 1) 100%
+  );
 }
 
 .drum-container {
@@ -26,19 +32,62 @@ body {
   margin: 0 auto;
 }
 
-.title {
-  text-align: center;
-  font-size: 3rem;
+.logo {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  gap: 10px;
   margin-bottom: 40px;
-  color: #00b3c2;
 }
 
-.title img {
-  width: 50px;
+.title {
+  font-size: 3rem;
+  color: #005158;
+  text-shadow: -3px 3px 0 white;
+}
+
+.logo img {
+  width: 40px;
 }
 
 .drum-item img {
   width: 200px;
   height: 200px;
-  background-color: white;
+  border-radius: 50%;
+  box-shadow: 0 2px 5px rgba(0, 0, 0, 0.3);
+}
+.drum-item div {
+  position: relative;
+}
+
+.drum-item p {
+  opacity: 0;
+  font-size: 2rem;
+  color: white;
+  text-shadow: 3px 3px black;
+
+  width: 100%;
+  height: 100%;
+  border-radius: 50%;
+  transition: 0.2s;
+  user-select: none;
+}
+.drum-item p:hover {
+  width: 100%;
+  height: 100%;
+  opacity: 1;
+}
+
+.drum-item p {
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+}
+
+.drum-item {
+  transition: 0.2s;
+}
+.drum-item:active {
+  transform: scale(0.95);
 }
