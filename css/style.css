@@ -28,7 +28,7 @@ body {
 .drum {
   display: flex;
   flex-wrap: wrap;
-  width: 600px;
+  width: 660px;
   margin: 0 auto;
 }
 
@@ -86,6 +86,7 @@ body {
 }
 
 .drum-item {
+  padding: 10px;
   transition: 0.2s;
 }
 .drum-item:active {
